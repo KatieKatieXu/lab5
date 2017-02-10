@@ -17,9 +17,14 @@ function projectClick(e) { 
     e.preventDefault();
     // In an event handler, $(this) refers to      
     // the object that triggered the event      
-    $(this).text(name)
-    var name = $(".name");
-    name.text("return")
+    $('.friend a').click(function(e){
+    	e.preventDefault();
+    	var anagram = anagrammedName($(this).text());
+    	$(this).text(anagram);
+    })
+
+}
+    
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	
