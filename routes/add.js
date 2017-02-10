@@ -1,6 +1,6 @@
-Var data = require("../data.json")
-export.viewProject = function(req, res) {
-	data.friends.push9{
+var data = require("../data.json")
+exports.addFriend = function(req, res) {
+	data.friends.push({
 		'name' : req.query.name,
 		'description': req.query.decription,
 		'imageURL': 'http://lorempixel.com/400/400/people'
